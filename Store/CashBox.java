@@ -32,7 +32,6 @@ public class CashBox {
     public void getCheckListToClient() {
         try {
             clientsList.add(queue.remove());
-
         } catch (NoSuchElementException e) {
             System.out.println("В очереди нет покупателей! Ждите прихода новых покупателей.");
         }
